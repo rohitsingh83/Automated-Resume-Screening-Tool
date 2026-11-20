@@ -1,0 +1,11 @@
+Priya Nair
+Email: priya.nair@example.com
+Education: B.E. in Information Technology
+Experience: 1.5 years (Python Data Analyst Intern & Associate)
+
+Technical Skills:
+Python, Pandas, NumPy, Scikit-learn, SQL, Git, Streamlit, Regex, Matplotlib, Seaborn
+
+Projects:
+- Automated customer churn prediction using Scikit-learn and Pandas.
+- Built interactive Streamlit dashboards with SQL backend.

@@ -1,0 +1,9 @@
+Vikram Joshi
+Education: B.Tech in Mechanical Engineering
+Experience: 1 year CAD Design Engineer
+
+Technical Skills:
+AutoCAD, SolidWorks, Excel, Basic Python
+
+Projects:
+- Thermal simulation modeling and BOM tracking in Excel.

@@ -1,0 +1,9 @@
+Sneha Reddy
+Education: B.Sc. in Computer Science
+Experience: 6 months Web Development Intern
+
+Technical Skills:
+Python, Git, HTML, CSS, JavaScript, Flask, SQL
+
+Projects:
+- Built a portfolio blog using Flask and SQLite.

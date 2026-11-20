@@ -1,0 +1,18 @@
+Job Title: Python & Machine Learning Engineer (Entry-Level / Intern)
+
+About the Role:
+We are looking for a Python Developer with strong fundamentals in Data Analysis, Natural Language Processing (NLP), Machine Learning, and backend API development. You will build data pipelines, clean unstructured text, train scikit-learn models, and expose services via FastAPI.
+
+Required Must-Have Skills:
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- SQL
+- Git
+
+Preferred Skills:
+- FastAPI, NLP, TF-IDF, Docker, Streamlit, Regex, REST API
+
+Minimum Experience: 1 year (including internships or major academic projects)
+Education: B.Tech / B.E. / B.Sc. in Computer Science, AI/ML, Data Science, or related field.
