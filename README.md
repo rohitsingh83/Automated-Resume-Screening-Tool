@@ -1,38 +1,104 @@
 # Automated Resume Screening Tool
 
-An end-to-end Python & NLP system that ingests candidate resumes (`.pdf`, `.docx`, `.txt`), redacts PII, extracts skills and experience, computes TF-IDF cosine similarity against a job description, flags must-have skill gaps, and exports ranked shortlist reports.
+A modern NLP and ATS (Applicant Tracking System) screening engine built with Python, scikit-learn, SQLite, and FastAPI. It analyzes candidates across `.docx`, `.pdf`, and `.txt` formats, removes PII to protect privacy, computes TF-IDF semantic relevance against target job descriptions, flags must-have skill deficiencies, and outputs ranked recommendations.
 
-## Problem Statement & Industry Relevance
-Recruiters receive hundreds of resumes per opening, making manual screening slow and inconsistent. This project simulates an Applicant Tracking System (ATS) scoring pipeline with transparent, skills-first explanations.
+---
 
-## Features
-- Multi-format resume ingestion (`.pdf`, `.docx`, `.txt`)
-- Automatic PII redaction (emails, phone numbers) before scoring
-- Skill, education, and years-of-experience extraction
-- TF-IDF + Cosine Similarity matching with must-have skill gap penalties
-- SQLite persistence (`db/screening.db`), FastAPI service (`api/app.py`), and Streamlit/Next.js UI
-- Exported CSV reports (`outputs/`) and ranking visualization (`images/candidate_ranking_chart.png`)
+## 🏛 Architecture & Processing Pipeline
 
-## Tech Stack
-- **Language & Data:** Python 3.11, Pandas, NumPy
-- **Parsing:** `python-docx`, `pypdf`, Regex
-- **NLP & Scoring:** `scikit-learn` TF-IDF + Cosine Similarity (with NumPy fallback)
-- **Backend & UI:** FastAPI, Uvicorn, SQLite, Streamlit, Next.js
+```
+[Resume Files: PDF / DOCX / TXT]
+               │
+               ▼
+   [Text Extraction & Normalization]
+               │
+               ▼
+    [Automated PII Redaction]  (Protects Emails / Phone Numbers)
+               │
+               ▼
+[Skill & Experience Regex Parser]  (Must-have & Good-to-have matching)
+               │
+               ▼
+   [TF-IDF & Cosine Similarity]   (Job Description vs Candidate)
+               │
+               ▼
+    [Multi-Factor ATS Scorer]     (Similarity + Skills + Experience - Penalties)
+               │
+               ▼
+ [SQLite Storage & CSV Reports] + [Interactive Streamlit & FastAPI]
+```
 
-## Setup & How to Run
+---
+
+## ✨ Key Capabilities
+
+- **Multi-Extension Ingestion:** Extracts text cleanly from `.pdf` (via `pypdf`), `.docx` (via `python-docx`), and plain `.txt`.
+- **Privacy-Preserving NLP:** Redacts sensitive PII (emails, phone numbers) before passing text to vectorization.
+- **Explainable Scoring Engine:** Combines semantic relevance (45%), must-have requirements matching (45%), and experience weighting (10%), offset by missing-skill penalties.
+- **Relational Audit Trail:** Records all jobs, candidate profiles, similarity scores, and final decisions into SQLite (`db/screening.db`).
+- **RESTful API Service:** Provides `/health` and `/rank` endpoints via FastAPI for microservice integration.
+- **Interactive Web Interface:** Streamlit dashboard with real-time candidate score breakdown, status filters, and visual analytics.
+
+---
+
+## 📐 Scoring Formula
+
+The candidate match score is calculated as:
+
+$$\text{Raw Score} = 0.45 \cdot \text{Sim} + 0.45 \cdot \text{MustRatio} + 0.10 \cdot \text{ExpRatio} - 0.05 \cdot N_{\text{missing}}$$
+
+- **Sim:** TF-IDF Cosine similarity between resume and job description.
+- **MustRatio:** Proportion of must-have skills satisfied.
+- **ExpRatio:** Ratio of candidate experience relative to minimum job requirement.
+- **$N_{\text{missing}}$:** Count of critical must-have skills absent.
+- **Shortlist Condition:** Candidate score $\ge 0.55$ and $\text{MustRatio} \ge 0.60$.
+
+---
+
+## 🚀 Quick Start Guide
+
+### 1. Environment Setup
 ```bash
 python -m venv venv
-source venv/bin/activate   # Windows: venv\Scripts\activate
+# Linux/macOS:
+source venv/bin/activate
+# Windows:
+venv\Scripts\activate
+
 pip install -r requirements.txt
+```
+
+### 2. Run Pipeline
+```bash
 python main.py
-python notebooks/03_eval.py
+```
+
+### 3. Launch Web Dashboard
+```bash
+python -m streamlit run app_streamlit.py
+```
+
+### 4. Start REST API
+```bash
+uvicorn api.app:app --host 0.0.0.0 --port 8000 --reload
+```
+
+### 5. Execute Test Suite
+```bash
 python -m unittest discover -s tests -v
 ```
 
-## Sample Output & Visualization
-![Candidate Ranking Chart](images/candidate_ranking_chart.png)
+---
 
-## Learning Outcomes
-- Building modular NLP preprocessing and feature-engineering pipelines
-- Designing fair, explainable ranking formulas with gap penalties
-- Persisting structured results in SQLite and serving ML pipelines via FastAPI
+## 🔌 API Documentation
+
+| Method | Endpoint | Description |
+|---|---|---|
+| `GET` | `/health` | Healthcheck and readiness probe. |
+| `POST` | `/rank` | Accepts job description, must-have skills, and candidate texts; returns ranked profiles. |
+
+---
+
+## 📊 Sample Visualizations
+
+The pipeline automatically outputs ranking comparison charts into `images/candidate_ranking_chart.png`.
