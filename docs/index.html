@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Screening Desk · Standalone Demo</title>
+<style>
+:root{color-scheme:light;--ink:#20243a;--muted:#5e647c;--line:#e4e6f0;--accent:#5b44cb;--violet:#efedff;--surface:#f6f7fb}*{box-sizing:border-box}body{margin:0;background:var(--surface);color:var(--ink);font:15px/1.5 system-ui,sans-serif}button,input,select{font:inherit;color:inherit}button,input,select{border:1px solid #d4d5e4;border-radius:.55rem;background:#fff;padding:.55rem .7rem}button{cursor:pointer}button:hover:not(:disabled){border-color:var(--accent);color:var(--accent)}button:disabled{cursor:not-allowed;opacity:.55}:focus-visible{outline:2px solid var(--accent);outline-offset:3px}.layout{display:grid;grid-template-columns:232px minmax(0,1fr);min-height:100vh}.side{background:#fff;border-right:1px solid var(--line);padding:1.6rem 1rem}.brand{display:flex;align-items:center;gap:.7rem;font-weight:750}.mark{background:var(--accent);color:white;border-radius:.6rem;padding:.42rem .56rem}.brand small{display:block;color:var(--muted);font-weight:400}nav{display:grid;gap:.35rem;margin:2rem 0}nav button{border-color:transparent;text-align:left}nav button[aria-current=page]{background:var(--violet);color:#4933ac;font-weight:700}.side-note{background:var(--surface);border:1px solid var(--line);padding:.8rem;border-radius:.6rem;font-size:.8rem;color:var(--muted)}main{padding:2rem clamp(1rem,4vw,2.75rem);width:100%;max-width:1410px;margin-inline:auto;min-width:0}.kicker{font-size:.7rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}h1{font-size:clamp(1.65rem,4vw,2.65rem);line-height:1.12;margin:.28rem 0 0;letter-spacing:-.045em}.top{display:flex;justify-content:space-between;align-items:end;gap:.6rem;margin-bottom:1rem}.hero{border-radius:.9rem;padding:1.45rem 1.65rem;background:radial-gradient(circle at 91% 15%,#ffffff19 0 14%,#ffffff0c 14% 19%,transparent 19%),linear-gradient(105deg,#262043,#5036b6);color:#fff}.tag{display:inline-block;padding:.15rem .5rem;border-radius:.35rem;font-size:.68rem;font-weight:750;letter-spacing:.08em;background:#ffffff20}.hero h2{font-size:clamp(1.35rem,3.5vw,2.2rem);margin:.25rem 0;letter-spacing:-.045em}.hero p{margin:0;color:#eae4ff}.metrics,.policy-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.7rem;margin:1rem 0}.card,.metric{border:1px solid var(--line);border-radius:.8rem;background:#fff;padding:1rem;min-width:0}.metric strong{display:block;line-height:1.25;font-size:1.6rem}.metric small,.hint,small{color:var(--muted)}.split{display:grid;grid-template-columns:minmax(0,2.2fr) minmax(0,1fr);gap:1rem;align-items:start}h2,h3{line-height:1.2}.card h2{font-size:1.12rem;margin:0}.hint{margin:.35rem 0 .9rem;font-size:.85rem}.tools{display:grid;grid-template-columns:1fr 1fr;gap:.65rem;margin-bottom:.85rem}.tools label{display:grid;gap:.25rem;font-size:.78rem;font-weight:650}.tools input,.tools select,#candidate{width:100%;min-width:0}.table-scroll{overflow-x:auto}table{border-collapse:collapse;width:100%;text-align:left;font-size:.82rem}th,td{padding:.5rem .36rem;border-bottom:1px solid var(--line)}thead th{font-size:.69rem;text-transform:uppercase;color:var(--muted);background:#f5f5fb}td:first-child{color:var(--muted)}tbody tr[data-selected=true]{background:#f6f3ff}tbody tr:last-child td{border:0}.person{font-size:inherit;background:none;border:0;padding:.15rem 0;text-align:left;font-weight:700}.badge{display:inline-block;border-radius:1rem;background:#eef0f7;color:#4c556f;font-weight:650;font-size:.7rem;padding:.19rem .48rem;white-space:nowrap}.badge[data-status=Shortlisted]{background:#e4f6ec;color:#196344}.badge[data-status="Needs Review"]{background:#fff0d4;color:#854500}.foot{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-top:.8rem}.detail h3{font-size:1.25rem;margin:.65rem 0 .2rem}.evidence{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.4rem;margin:.85rem 0}.evidence div{padding:.45rem .5rem;border-radius:.45rem;background:var(--surface)}dt{font-weight:700;font-size:.77rem}dd{margin:0 0 .6rem;color:var(--muted);font-size:.82rem;overflow-wrap:anywhere}.empty{padding:.8rem;background:var(--surface);border-radius:.55rem;color:var(--muted)}.queue-files{margin-bottom:1rem}.policy-grid{grid-template-columns:repeat(3,minmax(0,1fr))}[hidden]{display:none!important}
+@media(max-width:980px){.layout{grid-template-columns:180px minmax(0,1fr)}.split{grid-template-columns:1fr}}@media(max-width:680px){.layout{display:block}.side{border-right:0;border-bottom:1px solid var(--line);padding:.7rem .9rem}nav{display:flex;flex-wrap:wrap;margin:.6rem 0 0}.side-note{display:none}main{padding:1rem .8rem}.metrics,.policy-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.card,.metric{padding:.7rem}.top{align-items:start}.top button{white-space:nowrap}.hero{padding:1.05rem}.tools{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+<div class="layout">
+<aside class="side"><div class="brand"><span class="mark" aria-hidden="true">SD</span><div>Screening Desk<small>Standalone demo</small></div></div>
+<nav aria-label="Workspace"><button type="button" data-view="overview" aria-current="page">Overview</button><button type="button" data-view="queue">Review queue</button><button type="button" data-view="policy">Screening policy</button></nav>
+<div class="side-note"><strong>Sample data only</strong><br>Nothing is uploaded or saved. This demo runs entirely in your browser.</div></aside>
+<main>
+<div class="top"><div><div class="kicker">Recruiting workspace · demo</div><h1 id="page-title" tabindex="-1">Candidate overview</h1></div><button id="export-all" type="button">Export run</button></div>
+<noscript><p>Enable JavaScript in your browser to use the interactive demo.</p></noscript>
+<section id="overview">
+<div class="hero"><span class="tag">SAMPLE RUN</span><h2 id="job-title"></h2><p>Compare candidates and inspect the evidence behind their scores.</p></div>
+<div class="metrics" id="metrics" aria-label="Run totals"></div>
+<div class="split"><section class="card" aria-labelledby="ranking-title"><h2 id="ranking-title">Candidate rankings</h2><p class="hint">Search the sample run. Select a candidate name to see the evidence.</p>
+<div class="tools"><label>Search candidates<input id="query" type="search" placeholder="Name or file…"></label><label>Filter by status<select id="status"><option value="All">All statuses</option><option>Shortlisted</option><option value="Needs Review">Needs review</option><option value="Rejected">Not shortlisted</option></select></label></div>
+<div class="table-scroll" tabindex="0" role="region" aria-label="Candidate rankings table"><table id="candidate-table"><thead><tr><th scope="col">Rank</th><th scope="col">Candidate</th><th scope="col">Score</th><th scope="col">Skills</th><th scope="col">Status</th></tr></thead><tbody id="rankings"></tbody></table></div>
+<p id="overview-empty" class="empty" hidden>No candidates match these filters.</p><div class="foot"><small id="count" aria-live="polite"></small><button id="export-filtered" type="button">Export filtered</button></div></section>
+<section class="card detail" aria-labelledby="detail-title"><h2 id="detail-title">Candidate details</h2><div id="detail" aria-live="polite"></div></section></div></section>
+<section id="queue" hidden><section class="card queue-files"><h2>Unreadable files</h2><p class="hint">These files were not scored. Recover the text or check the original.</p><ul id="queue-files"></ul></section><section class="card"><h2>Experience to verify</h2><p class="hint">These candidates were scored, but the résumé text did not contain a verifiable experience duration.</p><ul id="queue-candidates"></ul></section></section>
+<section id="policy" hidden><section class="card"><h2>Shortlist requirements</h2><p class="hint">This policy was applied when the sample run was generated. These settings are read-only.</p><div class="policy-grid" id="policy-metrics"></div><h3>Required skills</h3><p id="skills"></p><p class="hint">Scores are recommendations for human review, not hiring decisions.</p></section></section>
+</main></div>
+<script id="demo-data" type="application/json">{"run":{"job_title":"Python & ML Engineer","must_have_skills":["python","pandas","numpy","scikit-learn","sql","git"],"min_years":1.0,"shortlist_threshold":0.55,"min_skill_ratio":0.6,"ingestion_issues":[{"filename":"text_extraction_pending.txt","reason":"No usable text; check for a scan or empty file"}]},"candidates":[{"rank":1,"candidate_name":"Sample Candidate 01","filename":"sample_resume_01.txt","education":"B.TECH","years_experience":"2.0","matched_skills_count":14,"similarity_score":0.3338,"must_have_ratio":1.0,"final_score":0.7002,"status":"Shortlisted","matched_must_have":"python, pandas, numpy, scikit-learn, sql, git","missing_must_have":"None","explanation":"Shortlist conditions met"},{"rank":2,"candidate_name":"Sample Candidate 02","filename":"sample_resume_02.docx","education":"B.TECH","years_experience":"2.0","matched_skills_count":10,"similarity_score":0.3176,"must_have_ratio":1.0,"final_score":0.6929,"status":"Shortlisted","matched_must_have":"python, pandas, numpy, scikit-learn, sql, git","missing_must_have":"None","explanation":"Shortlist conditions met"},{"rank":3,"candidate_name":"Sample Candidate 03","filename":"sample_resume_03.txt","education":"B.E.","years_experience":"1.5","matched_skills_count":10,"similarity_score":0.2184,"must_have_ratio":1.0,"final_score":0.6483,"status":"Shortlisted","matched_must_have":"python, pandas, numpy, scikit-learn, sql, git","missing_must_have":"None","explanation":"Shortlist conditions met"},{"rank":4,"candidate_name":"Sample Candidate 04","filename":"sample_resume_04.txt","education":"B.SC","years_experience":"","matched_skills_count":6,"similarity_score":0.2085,"must_have_ratio":1.0,"final_score":0.5438,"status":"Needs Review","matched_must_have":"python, pandas, numpy, scikit-learn, sql, git","missing_must_have":"None","explanation":"No explicit experience duration found; verify manually"},{"rank":5,"candidate_name":"Sample Candidate 05","filename":"sample_resume_05.txt","education":"B.TECH","years_experience":"1.0","matched_skills_count":9,"similarity_score":0.2459,"must_have_ratio":0.8333,"final_score":0.5356,"status":"Rejected","matched_must_have":"python, pandas, numpy, sql, git","missing_must_have":"scikit-learn","explanation":"Missing 1 must-have skill(s): scikit-learn; Score below the 0.55 shortlist cutoff"},{"rank":6,"candidate_name":"Sample Candidate 06","filename":"sample_resume_06.txt","education":"B.SC","years_experience":"0.5","matched_skills_count":5,"similarity_score":0.1714,"must_have_ratio":0.5,"final_score":0.2021,"status":"Rejected","matched_must_have":"python, sql, git","missing_must_have":"pandas, numpy, scikit-learn","explanation":"Missing 3 must-have skill(s): pandas, numpy, scikit-learn; Experience below the 1-year minimum; Required-skill coverage below 60%; Score below the 0.55 shortlist cutoff"},{"rank":7,"candidate_name":"Sample Candidate 07","filename":"sample_resume_07.txt","education":"B.TECH","years_experience":"1.0","matched_skills_count":2,"similarity_score":0.1149,"must_have_ratio":0.1667,"final_score":0.0,"status":"Rejected","matched_must_have":"python","missing_must_have":"pandas, numpy, scikit-learn, sql, git","explanation":"Missing 5 must-have skill(s): pandas, numpy, scikit-learn, sql, git; Required-skill coverage below 60%; Score below the 0.55 shortlist cutoff"}]}</script>
+<script>
+'use strict';
+const {run,candidates}=JSON.parse(document.getElementById('demo-data').textContent);
+const $=id=>document.getElementById(id);
+const label=s=>({'Needs Review':'Needs review',Rejected:'Not shortlisted'}[s]||s);
+const percent=n=>`${Math.round(n*100)}%`;
+const experience=n=>n===''?'Not stated':`${n} ${n===1?'year':'years'}`;
+const el=(tag,value,cls)=>{const node=document.createElement(tag);if(value!==undefined)node.textContent=value;if(cls)node.className=cls;return node};
+function badge(status){const node=el('span',label(status),'badge');node.dataset.status=status;return node}
+function metric(title,value){const node=el('div',undefined,'metric');node.append(el('small',title),el('strong',value));return node}
+let filtered=[], selected=null;
+$('job-title').textContent=run.job_title;
+for(const [title,total] of [['Scored candidates',candidates.length],['Shortlisted',candidates.filter(c=>c.status==='Shortlisted').length],['Needs review',candidates.filter(c=>c.status==='Needs Review').length],['Not shortlisted',candidates.filter(c=>c.status==='Rejected').length]]) $('metrics').append(metric(title,total));
+for(const [title,value] of [['Score cutoff',run.shortlist_threshold],['Skill coverage',percent(run.min_skill_ratio)],['Minimum experience',experience(run.min_years)]]) $('policy-metrics').append(metric(title,value));
+$('skills').textContent=run.must_have_skills.join(', ');
+for(const issue of run.ingestion_issues) $('queue-files').append(el('li',`${issue.filename} — ${issue.reason}`));
+for(const candidate of candidates.filter(c=>c.status==='Needs Review')) $('queue-candidates').append(el('li',`${candidate.candidate_name} — ${candidate.explanation}`));
+function details(candidate){
+  const target=$('detail');target.replaceChildren();
+  if(!candidate){target.append(el('p','No candidate to inspect.','empty'));return}
+  target.append(el('h3',candidate.candidate_name),badge(candidate.status));
+  const facts=el('div',undefined,'evidence');
+  for(const [title,value] of [['Score',candidate.final_score.toFixed(4)],['Skill coverage',percent(candidate.must_have_ratio)],['Experience',experience(candidate.years_experience)],['Job-text similarity',percent(candidate.similarity_score)]]){
+    const item=el('div');item.append(el('small',title),el('br'),el('strong',value));facts.append(item);
+  }
+  target.append(facts);
+  const list=el('dl');for(const [title,value] of [['Screening reason',candidate.explanation],['Matched skills',candidate.matched_must_have],['Missing skills',candidate.missing_must_have],['Education',candidate.education],['Filename',candidate.filename]])list.append(el('dt',title),el('dd',value));target.append(list);
+}
+function render(){
+  const query=$('query').value.trim().toLowerCase(), status=$('status').value;
+  filtered=candidates.filter(candidate=>(status==='All'||candidate.status===status)&&[candidate.candidate_name,candidate.filename].some(value=>value.toLowerCase().includes(query)));
+  if(!filtered.some(candidate=>candidate.rank===selected)) selected=filtered[0]?.rank??null;
+  $('candidate-table').hidden=!filtered.length;$('overview-empty').hidden=Boolean(filtered.length);$('export-filtered').disabled=!filtered.length;
+  $('count').textContent=`${filtered.length} of ${candidates.length} candidates`;
+  const rankings=$('rankings');rankings.replaceChildren();
+  for(const candidate of filtered){
+    const row=el('tr');row.dataset.selected=candidate.rank===selected;
+    const person=el('button',candidate.candidate_name,'person');person.type='button';person.setAttribute('aria-pressed',String(candidate.rank===selected));
+    person.addEventListener('click',()=>{selected=candidate.rank;for(const other of rankings.rows){const active=other===row;other.dataset.selected=active;other.querySelector('button').setAttribute('aria-pressed',String(active))}details(candidate)});
+    const name=el('td');name.append(person);const statusCell=el('td');statusCell.append(badge(candidate.status));
+    row.append(el('td',candidate.rank),name,el('td',candidate.final_score.toFixed(4)),el('td',percent(candidate.must_have_ratio)),statusCell);rankings.append(row);
+  }
+  details(filtered.find(candidate=>candidate.rank===selected));
+}
+function exportRows(rows,filename){
+  const keys=Object.keys(candidates[0]);
+  const cell=value=>'"'+String(value??'').replaceAll('"','""')+'"';
+  const csv=[keys.map(cell).join(','),...rows.map(row=>keys.map(key=>cell(row[key])).join(','))].join('\r\n');
+  const url=URL.createObjectURL(new Blob([csv],{type:'text/csv;charset=utf-8'}));
+  const link=el('a');link.href=url;link.download=filename;document.body.append(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
+}
+$('query').addEventListener('input',render);$('status').addEventListener('change',render);
+$('export-all').addEventListener('click',()=>exportRows(candidates,'screening-demo.csv'));
+$('export-filtered').addEventListener('click',()=>exportRows(filtered,'screening-demo-filtered.csv'));
+const views={overview:'Candidate overview',queue:'Review queue',policy:'Screening policy'};
+for(const button of document.querySelectorAll('nav [data-view]'))button.addEventListener('click',()=>{
+  const view=button.dataset.view;
+  for(const id of Object.keys(views)) $(id).hidden=id!==view;
+  for(const tab of document.querySelectorAll('nav [data-view]')){if(tab===button)tab.setAttribute('aria-current','page');else tab.removeAttribute('aria-current')}
+  $('page-title').textContent=views[view];$('export-all').hidden=view!=='overview';$('page-title').focus();
+});
+render();
+</script>
+</body>
+</html>
