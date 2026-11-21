@@ -1,0 +1,68 @@
+Candidate feedback: Data Analyst
+============================================================
+
+#1 Aarav Mehta (aarav_mehta.pdf): 90.4/100 -> Shortlisted
+   + Matched 5/5 must-have skills
+   + Bonus skills: Power BI, Tableau, Statistics, Communication
+   + 5.4 years of experience
+   + Education: Bachelor degree
+
+#2 Ananya Iyer (ananya_iyer.pdf): 67.0/100 -> Shortlisted
+   + Matched 5/5 must-have skills
+   + Bonus skills: Statistics, Communication
+   + 0.5 years of experience
+   + Education: Bachelor degree
+   ! Experience 0.5 yrs is below the required 1 yrs
+
+#3 Meera Nair (meera_nair.txt): 66.8/100 -> Review
+   + Matched 3/5 must-have skills
+   + Bonus skills: Power BI, Tableau, Statistics, Communication
+   + 7.4 years of experience
+   + Education: Master degree
+   ! Missing must-have: Pandas, Data Visualization
+
+#4 Arjun Reddy (arjun_reddy.pdf): 60.0/100 -> Review
+   + Matched 4/5 must-have skills
+   + Bonus skills: Statistics
+   + 3.9 years of experience
+   + Education: Bachelor degree
+   ! Missing must-have: Excel
+
+#5 Diya Sharma (diya_sharma.docx): 49.5/100 -> Review
+   + Matched 3/5 must-have skills
+   + Bonus skills: Statistics
+   + 6.3 years of experience
+   + Education: Master degree
+   ! Missing must-have: Excel, Data Visualization
+
+#6 Priya Menon (priya_menon.pdf): 37.8/100 -> Rejected
+   + Matched 2/5 must-have skills
+   + 3.8 years of experience
+   + Education: Bachelor degree
+   ! Missing must-have: Excel, Pandas, Data Visualization
+
+#7 Vikram Joshi (vikram_joshi.txt): 37.6/100 -> Rejected
+   + Matched 5/5 must-have skills
+   + 0.2 years of experience
+   + Education: Diploma degree
+   ! Possible keyword stuffing (47 skill mentions per 100 words, each repeated 3.8x)
+   ! Experience 0.2 yrs is below the required 1 yrs
+
+#8 Kabir Singh (kabir_singh.txt): 36.7/100 -> Rejected
+   + Matched 2/5 must-have skills
+   + 6.5 years of experience
+   + Education: Bachelor degree
+   ! Missing must-have: Excel, Pandas, Data Visualization
+
+#9 Sneha Kapoor (sneha_kapoor.docx): 33.8/100 -> Rejected
+   + Matched 1/5 must-have skills
+   + Bonus skills: Communication
+   + 4.6 years of experience
+   + Education: Bachelor degree
+   ! Missing must-have: Python, SQL, Pandas, Data Visualization
+
+#10 Rohan Gupta (rohan_gupta.docx): 20.5/100 -> Rejected
+   + Matched 0/5 must-have skills
+   + 3.9 years of experience
+   + Education: Bachelor degree
+   ! Missing must-have: Python, SQL, Excel, Pandas, Data Visualization

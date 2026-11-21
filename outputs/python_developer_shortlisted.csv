@@ -1,0 +1,3 @@
+Rank,Candidate,File,Score,Decision,Must-have %,Similarity %,Experience (yrs),Education,Matched must-have,Missing must-have,Bonus skills,All skills,Flags,Email
+1,Kabir Singh,kabir_singh.txt,88.5,Shortlisted,100,54,6.5,Bachelor,"python, django, rest api, sql, git",-,"fastapi, docker, aws, linux, ci/cd","aws, ci/cd, django, docker, fastapi, flask, git, linux, python, rest api, sql, teamwork",-,kabir.singh@example.com
+2,Priya Menon,priya_menon.pdf,78.4,Shortlisted,100,37,3.8,Bachelor,"python, django, rest api, sql, git",-,"docker, aws, linux","aws, django, docker, flask, git, html/css, linux, problem solving, python, rest api, sql",-,priya.menon@example.com

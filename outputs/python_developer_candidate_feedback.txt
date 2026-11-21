@@ -1,0 +1,66 @@
+Candidate feedback: Python Backend Developer
+============================================================
+
+#1 Kabir Singh (kabir_singh.txt): 88.5/100 -> Shortlisted
+   + Matched 5/5 must-have skills
+   + Bonus skills: fastapi, docker, aws, linux, ci/cd
+   + 6.5 years of experience
+   + Education: Bachelor degree
+
+#2 Priya Menon (priya_menon.pdf): 78.4/100 -> Shortlisted
+   + Matched 5/5 must-have skills
+   + Bonus skills: docker, aws, linux
+   + 3.8 years of experience
+   + Education: Bachelor degree
+
+#3 Diya Sharma (diya_sharma.docx): 52.7/100 -> Review
+   + Matched 3/5 must-have skills
+   + Bonus skills: docker, aws
+   + 6.3 years of experience
+   + Education: Master degree
+   ! Missing must-have: django, rest api
+
+#4 Arjun Reddy (arjun_reddy.pdf): 45.9/100 -> Review
+   + Matched 3/5 must-have skills
+   + 3.9 years of experience
+   + Education: Bachelor degree
+   ! Missing must-have: django, rest api
+
+#5 Rohan Gupta (rohan_gupta.docx): 38.5/100 -> Rejected
+   + Matched 2/5 must-have skills
+   + 3.9 years of experience
+   + Education: Bachelor degree
+   ! Missing must-have: python, django, sql
+
+#6 Aarav Mehta (aarav_mehta.pdf): 37.7/100 -> Rejected
+   + Matched 2/5 must-have skills
+   + 5.4 years of experience
+   + Education: Bachelor degree
+   ! Missing must-have: django, rest api, git
+
+#7 Meera Nair (meera_nair.txt): 36.7/100 -> Rejected
+   + Matched 2/5 must-have skills
+   + 7.4 years of experience
+   + Education: Master degree
+   ! Missing must-have: django, rest api, git
+
+#8 Ananya Iyer (ananya_iyer.pdf): 26.7/100 -> Rejected
+   + Matched 2/5 must-have skills
+   + 0.5 years of experience
+   + Education: Bachelor degree
+   ! Missing must-have: django, rest api, git
+   ! Experience 0.5 yrs is below the required 2 yrs
+
+#9 Vikram Joshi (vikram_joshi.txt): 25.0/100 -> Rejected
+   + Matched 4/5 must-have skills
+   + 0.2 years of experience
+   + Education: Diploma degree
+   ! Possible keyword stuffing (47 skill mentions per 100 words, each repeated 3.8x)
+   ! Missing must-have: git
+   ! Experience 0.2 yrs is below the required 2 yrs
+
+#10 Sneha Kapoor (sneha_kapoor.docx): 20.9/100 -> Rejected
+   + Matched 0/5 must-have skills
+   + 4.6 years of experience
+   + Education: Bachelor degree
+   ! Missing must-have: python, django, rest api, sql, git

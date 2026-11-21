@@ -1,0 +1,68 @@
+Candidate feedback: Machine Learning Engineer
+============================================================
+
+#1 Diya Sharma (diya_sharma.docx): 90.1/100 -> Shortlisted
+   + Matched 5/5 must-have skills
+   + Bonus skills: pytorch, tensorflow, nlp, docker, aws, llm
+   + 6.3 years of experience
+   + Education: Master degree
+
+#2 Arjun Reddy (arjun_reddy.pdf): 66.4/100 -> Shortlisted
+   + Matched 4/5 must-have skills
+   + Bonus skills: tensorflow, nlp
+   + 3.9 years of experience
+   + Education: Bachelor degree
+   ! Missing must-have: deep learning
+
+#3 Aarav Mehta (aarav_mehta.pdf): 46.9/100 -> Review
+   + Matched 3/5 must-have skills
+   + 5.4 years of experience
+   + Education: Bachelor degree
+   ! Missing must-have: machine learning, deep learning
+
+#4 Priya Menon (priya_menon.pdf): 44.4/100 -> Rejected
+   + Matched 2/5 must-have skills
+   + Bonus skills: docker, aws
+   + 3.8 years of experience
+   + Education: Bachelor degree
+   ! Missing must-have: machine learning, scikit-learn, deep learning
+
+#5 Kabir Singh (kabir_singh.txt): 42.9/100 -> Rejected
+   + Matched 2/5 must-have skills
+   + Bonus skills: docker, aws
+   + 6.5 years of experience
+   + Education: Bachelor degree
+   ! Missing must-have: machine learning, scikit-learn, deep learning
+
+#6 Meera Nair (meera_nair.txt): 37.2/100 -> Rejected
+   + Matched 2/5 must-have skills
+   + 7.4 years of experience
+   + Education: Master degree
+   ! Missing must-have: machine learning, scikit-learn, deep learning
+
+#7 Ananya Iyer (ananya_iyer.pdf): 35.8/100 -> Rejected
+   + Matched 3/5 must-have skills
+   + 0.5 years of experience
+   + Education: Bachelor degree
+   ! Missing must-have: machine learning, deep learning
+   ! Experience 0.5 yrs is below the required 2 yrs
+
+#8 Vikram Joshi (vikram_joshi.txt): 28.8/100 -> Rejected
+   + Matched 4/5 must-have skills
+   + 0.2 years of experience
+   + Education: Diploma degree
+   ! Possible keyword stuffing (47 skill mentions per 100 words, each repeated 3.8x)
+   ! Missing must-have: scikit-learn
+   ! Experience 0.2 yrs is below the required 2 yrs
+
+#9 Sneha Kapoor (sneha_kapoor.docx): 20.4/100 -> Rejected
+   + Matched 0/5 must-have skills
+   + 4.6 years of experience
+   + Education: Bachelor degree
+   ! Missing must-have: python, machine learning, scikit-learn, deep learning, sql
+
+#10 Rohan Gupta (rohan_gupta.docx): 20.3/100 -> Rejected
+   + Matched 0/5 must-have skills
+   + 3.9 years of experience
+   + Education: Bachelor degree
+   ! Missing must-have: python, machine learning, scikit-learn, deep learning, sql
