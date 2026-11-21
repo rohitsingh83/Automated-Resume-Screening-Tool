@@ -16,6 +16,7 @@ logging.basicConfig(
     level=getattr(logging, settings.log_level.upper(), logging.INFO),
     format="%(asctime)s | %(levelname)s | %(name)s | %(message)s",
 )
+logging.getLogger("matplotlib").setLevel(logging.WARNING)  # hide matplotlib INFO noise
 logger = logging.getLogger("resume_screening")
 
 
