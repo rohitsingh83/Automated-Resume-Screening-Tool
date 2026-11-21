@@ -1,9 +1,0 @@
-Rohan Verma
-Education: B.Tech in Data Science
-Experience: 1 year internship in Data Analytics
-
-Technical Skills:
-Python, Pandas, NumPy, SQL, Git, Excel, Power BI, Matplotlib, Regex
-
-Projects:
-- Sales forecasting and SQL reporting pipeline in Python and Pandas.

@@ -1,0 +1,54 @@
+{
+  "Programming": {
+    "python": ["python", "python3"],
+    "java": ["java"],
+    "c++": ["c++", "cpp"],
+    "javascript": ["javascript", "js", "es6"],
+    "r": ["r programming", "r language"],
+    "sql": ["sql", "mysql", "postgresql", "postgres", "sqlite", "t-sql"]
+  },
+  "Data & Analytics": {
+    "pandas": ["pandas"],
+    "numpy": ["numpy"],
+    "excel": ["excel", "ms excel", "advanced excel", "vlookup", "pivot tables"],
+    "power bi": ["power bi", "powerbi"],
+    "tableau": ["tableau"],
+    "statistics": ["statistics", "statistical analysis", "hypothesis testing", "a/b testing"],
+    "data visualization": ["data visualization", "data visualisation", "matplotlib", "seaborn", "plotly"],
+    "data cleaning": ["data cleaning", "data wrangling", "data preprocessing"]
+  },
+  "Machine Learning & AI": {
+    "machine learning": ["machine learning", "ml"],
+    "scikit-learn": ["scikit-learn", "sklearn", "scikit learn"],
+    "deep learning": ["deep learning", "neural networks", "cnn", "rnn", "lstm"],
+    "tensorflow": ["tensorflow", "keras"],
+    "pytorch": ["pytorch", "torch"],
+    "nlp": ["nlp", "natural language processing", "text mining", "spacy", "nltk"],
+    "computer vision": ["computer vision", "opencv", "image processing"],
+    "llm": ["llm", "large language models", "generative ai", "genai", "langchain", "prompt engineering"]
+  },
+  "Web & Backend": {
+    "django": ["django"],
+    "flask": ["flask"],
+    "fastapi": ["fastapi"],
+    "rest api": ["rest api", "restful", "rest apis", "api development"],
+    "html/css": ["html", "css", "html5", "css3"],
+    "react": ["react", "reactjs", "react.js"]
+  },
+  "Cloud & DevOps": {
+    "aws": ["aws", "amazon web services", "ec2", "s3", "lambda"],
+    "azure": ["azure", "microsoft azure"],
+    "gcp": ["gcp", "google cloud"],
+    "docker": ["docker", "containers"],
+    "kubernetes": ["kubernetes", "k8s"],
+    "git": ["git", "github", "gitlab", "version control"],
+    "linux": ["linux", "unix", "bash", "shell scripting"],
+    "ci/cd": ["ci/cd", "jenkins", "github actions"]
+  },
+  "Soft Skills": {
+    "communication": ["communication", "presentation skills", "stakeholder management"],
+    "teamwork": ["teamwork", "collaboration", "team player"],
+    "problem solving": ["problem solving", "problem-solving", "analytical thinking"],
+    "leadership": ["leadership", "led a team", "mentored"]
+  }
+}

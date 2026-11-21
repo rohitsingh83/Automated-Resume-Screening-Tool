@@ -1,0 +1,21 @@
+Meera Nair
+----------
+Email: meera.nair@example.com | Phone: +91 94470 12121
+PROFESSIONAL SUMMARY
+--------------------
+Business Intelligence analyst with 5 years of experience in SQL, Tableau and stakeholder reporting.
+SKILLS
+------
+SQL, T-SQL, Excel, Tableau, Power BI, Statistics, Communication, Stakeholder Management, Leadership, Python (basic)
+WORK EXPERIENCE
+---------------
+Senior BI Analyst, Horizon Insurance (Apr 2021 - Present)
+- Led a team of 3 analysts; built Tableau executive dashboards; wrote complex SQL for claims analytics.
+BI Analyst, DataWave (Jul 2019 - Mar 2021)
+- Created Excel and Power BI reports for operations teams.
+EDUCATION
+---------
+MBA in Business Analytics, NMIMS Mumbai, 2019; B.Com, 2017
+PROJECTS
+--------
+Claims fraud early-warning dashboard (Tableau).

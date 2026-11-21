@@ -1,4 +1,0 @@
-rank,candidate_name,filename,education,years_experience,matched_skills_count,similarity_score,must_have_ratio,final_score,status,matched_must_have,missing_must_have,explanation
-1,Aarav Sharma,aarav_sharma.txt,B.TECH,2.0,6,0.2669,1.0,0.6701,Shortlisted,"python, pandas, numpy, scikit-learn, sql, git",None,All must-have skills matched
-2,Ananya Kulkarni,ananya_kulkarni.docx,B.TECH,2.0,6,0.2345,1.0,0.6555,Shortlisted,"python, pandas, numpy, scikit-learn, sql, git",None,All must-have skills matched
-3,Priya Nair,priya_nair.txt,B.E,1.5,6,0.1597,1.0,0.6219,Shortlisted,"python, pandas, numpy, scikit-learn, sql, git",None,All must-have skills matched

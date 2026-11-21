@@ -1,0 +1,11 @@
+{
+  "id": "data_analyst",
+  "title": "Data Analyst",
+  "company": "BrightMart Retail Analytics",
+  "location": "Bengaluru (Hybrid)",
+  "min_experience": 1,
+  "education": "bachelor",
+  "must_have": ["python", "sql", "excel", "pandas", "data visualization"],
+  "nice_to_have": ["power bi", "tableau", "statistics", "communication"],
+  "description": "We are hiring a Data Analyst to turn retail sales and customer data into decisions. You will write SQL queries to pull data, clean and analyse it with Python and Pandas, build dashboards in Power BI or Tableau, and present insights to business stakeholders. You should be comfortable with Excel (pivot tables, VLOOKUP), statistics such as hypothesis testing and A/B testing, and data visualization. At least 1 year of experience in an analytics role and a bachelor's degree in a quantitative field are required. Strong communication and problem solving skills are a must."
+}

@@ -1,9 +1,19 @@
 Vikram Joshi
-Education: B.Tech in Mechanical Engineering
-Experience: 1 year CAD Design Engineer
-
-Technical Skills:
-AutoCAD, SolidWorks, Excel, Basic Python
-
-Projects:
-- Thermal simulation modeling and BOM tracking in Excel.
+------------
+Email: vikram.joshi@example.com | Phone: +91 90040 13579
+PROFESSIONAL SUMMARY
+--------------------
+Python Python Python SQL SQL Excel Pandas data visualization machine learning deep learning Django REST API.
+SKILLS
+------
+Python, SQL, Excel, Pandas, Django, REST API, Machine Learning, Deep Learning, Data Visualization, Python, SQL, Python
+WORK EXPERIENCE
+---------------
+Trainee, Self-employed (Jan 2025 - Mar 2025)
+- Learning Python SQL Excel Pandas Django machine learning deep learning.
+EDUCATION
+---------
+Diploma in Computer Applications, 2024
+PROJECTS
+--------
+Python Python SQL projects.

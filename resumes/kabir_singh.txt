@@ -1,0 +1,21 @@
+Kabir Singh
+-----------
+Email: kabir.singh@example.com | Phone: +91 97311 98765
+PROFESSIONAL SUMMARY
+--------------------
+Backend developer with 3+ years of experience building REST APIs in Python and Django.
+SKILLS
+------
+Python, Django, Django REST Framework, FastAPI, REST API, PostgreSQL, SQL, Git, GitHub Actions, Docker, Linux, Bash, AWS EC2, Teamwork
+WORK EXPERIENCE
+---------------
+Software Engineer, PayLoop (Mar 2022 - Present)
+- Designed REST APIs in Django serving 2M requests/day; migrated services to FastAPI; set up CI/CD with GitHub Actions and Docker.
+Associate Developer, CodeCraft (Jun 2020 - Feb 2022)
+- Built internal tools with Flask and PostgreSQL; wrote unit tests and code reviews on GitHub.
+EDUCATION
+---------
+B.E. in Information Technology, Pune University, 2020
+PROJECTS
+--------
+Expense tracker API (FastAPI, SQLite); URL shortener (Django, Redis).

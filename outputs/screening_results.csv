@@ -1,7 +1,0 @@
-rank,candidate_name,filename,education,years_experience,matched_skills_count,similarity_score,must_have_ratio,final_score,status,matched_must_have,missing_must_have,explanation
-1,Aarav Sharma,aarav_sharma.txt,B.TECH,2.0,6,0.2669,1.0,0.6701,Shortlisted,"python, pandas, numpy, scikit-learn, sql, git",None,All must-have skills matched
-2,Ananya Kulkarni,ananya_kulkarni.docx,B.TECH,2.0,6,0.2345,1.0,0.6555,Shortlisted,"python, pandas, numpy, scikit-learn, sql, git",None,All must-have skills matched
-3,Priya Nair,priya_nair.txt,B.E,1.5,6,0.1597,1.0,0.6219,Shortlisted,"python, pandas, numpy, scikit-learn, sql, git",None,All must-have skills matched
-4,Rohan Verma,rohan_verma.txt,B.TECH,1.0,5,0.1363,0.8333,0.4863,Rejected,"python, pandas, numpy, sql, git",scikit-learn,Missing 1 must-have skill(s): scikit-learn
-5,Sneha Reddy,sneha_reddy.txt,B.SC,0.5,3,0.0832,0.5,0.1624,Rejected,"python, sql, git","pandas, numpy, scikit-learn","Missing 3 must-have skill(s): pandas, numpy, scikit-learn"
-6,Vikram Joshi,vikram_joshi.txt,B.TECH,1.0,1,0.0471,0.1667,0.0,Rejected,python,"pandas, numpy, scikit-learn, sql, git","Missing 5 must-have skill(s): pandas, numpy, scikit-learn, sql, git"

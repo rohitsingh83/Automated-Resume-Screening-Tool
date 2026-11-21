@@ -1,0 +1,11 @@
+{
+  "id": "ml_engineer",
+  "title": "Machine Learning Engineer",
+  "company": "Insight AI Labs",
+  "location": "Hyderabad (Remote friendly)",
+  "min_experience": 2,
+  "education": "bachelor",
+  "must_have": ["python", "machine learning", "scikit-learn", "deep learning", "sql"],
+  "nice_to_have": ["pytorch", "tensorflow", "nlp", "docker", "aws", "llm"],
+  "description": "Insight AI Labs needs a Machine Learning Engineer to build and deploy models for customer analytics and NLP products. You will engineer features with Python, Pandas and SQL, train models with scikit-learn, build deep learning models in PyTorch or TensorFlow, work on NLP and large language models, and ship models as Docker containers on AWS. 2+ years of hands-on machine learning experience and a bachelor's or master's degree in computer science, statistics or a related field are required."
+}

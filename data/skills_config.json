@@ -1,6 +1,0 @@
-{
-  "must_have": ["python", "pandas", "numpy", "scikit-learn", "sql", "git"],
-  "preferred": ["fastapi", "nlp", "tf-idf", "docker", "streamlit", "regex", "rest api", "matplotlib"],
-  "min_years": 1.0,
-  "shortlist_threshold": 0.55
-}

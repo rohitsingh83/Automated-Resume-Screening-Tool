@@ -1,0 +1,11 @@
+{
+  "id": "python_developer",
+  "title": "Python Backend Developer",
+  "company": "CloudNest Technologies",
+  "location": "Pune (On-site)",
+  "min_experience": 2,
+  "education": "bachelor",
+  "must_have": ["python", "django", "rest api", "sql", "git"],
+  "nice_to_have": ["fastapi", "docker", "aws", "linux", "ci/cd"],
+  "description": "CloudNest is looking for a Python Backend Developer to design and build scalable REST APIs using Django and FastAPI. You will model data in PostgreSQL, write clean tested code, review pull requests on GitHub, and deploy services with Docker on AWS. Experience with Linux, shell scripting and CI/CD pipelines (GitHub Actions or Jenkins) is a plus. We expect 2+ years of professional Python development experience and a bachelor's degree in computer science or a related field. Teamwork and ownership are important to us."
+}
