@@ -1,5 +1,7 @@
 # Automated Resume Screening Tool
 
+🌐 **Live report:** https://rohitsingh83.github.io/Automated-Resume-Screening-Tool/ · 💻 **Source:** https://github.com/rohitsingh83/Automated-Resume-Screening-Tool
+
 An ATS-style resume screener built in Python. It reads resumes in **PDF, DOCX and TXT**, compares them with a
 job description using **TF-IDF + cosine similarity** and rule checks, ranks the candidates, and explains every
 decision. You can use it from the command line, through an interactive **Streamlit dashboard**, or through a
@@ -90,7 +92,7 @@ Automated-Resume-Screening-Tool/
 │   └── charts.py             # PNG charts
 ├── outputs/                  # generated reports (committed as examples)
 ├── images/                   # charts and dashboard screenshots
-├── docs/                     # project explanation and interview Q&A
+├── docs/                     # live report (index.html, GitHub Pages), project explanation and interview Q&A
 ├── scripts/
 │   └── create_sample_resumes.py
 ├── tests/test_screening.py
